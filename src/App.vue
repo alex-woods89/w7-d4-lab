@@ -3,7 +3,7 @@
    <h1>Beer App!</h1>
     <beer-list :beers="beers"></beer-list>
     <beer-detail :beer="selectedBeer"></beer-detail> 
-    <favourite-beer :beer="selectedBeer"> </favourite-beer>
+    <favourite-beer></favourite-beer>
   </div>
 </template>
 
@@ -35,7 +35,7 @@ export default {
     this.selectedBeer = beer}),
 
     eventBus.$on('beer-favourited', (beer) => {
-      this.favouriteBeers.push(selectedBeer)
+      this.favouriteBeers.push(favouriteBeer)
     })
   
  }
