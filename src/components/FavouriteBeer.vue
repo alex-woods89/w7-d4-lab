@@ -1,7 +1,7 @@
 <template>
   <div>
     <button v-on:click="handleClick">Mark as Favourite</button>
-    <li>{{favouriteBeer.name}}</li>
+    <li>{{beer.name}}</li>
   </div>
 </template>
 
