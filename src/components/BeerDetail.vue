@@ -4,8 +4,9 @@
      <div>
          <p>Name: {{beer.name}}</p>
          <p>ABV: {{beer.abv}}%</p>
-         <img :src="beer.image_url" width="100" height="300">
+         <img :src="beer.image_url"  height="300">
          <p>{{beer.description}}</p>
+         <favourite-beer></favourite-beer>
      </div>
     </article>
 </template>
